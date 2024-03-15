@@ -1,0 +1,1 @@
+This sample survey form was created as an exercise for the Responsive Web Design Certification offered through freeCodeCamp.org.
