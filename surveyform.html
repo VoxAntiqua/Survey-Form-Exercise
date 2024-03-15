@@ -1,53 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <title>Title Placeholder</title>
+        <meta charset="UTF-8">
+        <title>Broxton, OK Mayoral Election Poll</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1 id="title">Page Title Placeholder</h1>
-        <p id="description">Description Placeholder</p>
+        <h1 id="title">Broxton, Oklahoma Mayoral Election Poll</h1>
+        <p id="description">Conducted by The ROXXON Policy Research Center</p>
+        <form id="survey-form">
+            <fieldset id = "personal">
+                <legend>Please enter your personal information</legend>
+                <label for = "name" id = "name-label">
+                    Full Name: <input 
+                    id = "name" 
+                    name = "email" 
+                    type = "text" 
+                    placeholder = "Peter Parker"
+                    required />
+                </label>
+                <label for = "email" id = "email-label">
+                    Email: <input 
+                    id = "email" 
+                    name = "email" 
+                    type = "email" 
+                    placeholder = "pparker@dailybugle.com"
+                    required />
+                </label>
+                <label for = "number" id = "number-label">
+                    Age (Years): <input 
+                    id = "number" 
+                    name = "number" 
+                    type = "number" 
+                    min = "18" 
+                    max = "500"
+                    placeholder = "25"
+                    required />
+                </label>
+            </fieldset>
+            <fieldset id = "demographics">
+                <legend>What is your race, ethnicity, or origin? (Please check all that apply)</legend>
+                <input id = "american-indian-alaska-native" 
+                name = "american-indian-alaska-native" 
+                type = "checkbox" 
+                value = "1"/>
+                <label for = "american-indian-alaska-native"> American Indian or Alaska Native</label>
+                <input id = "asgardian" 
+                name = "asgardian" 
+                type = "checkbox" 
+                value = "2"/>
+                <label for = "asgardian"> Asgardian or Other Nine Realms Origin</label>
+                <input id ="asian" 
+                name = "asian" 
+                type = "checkbox" 
+                value = "3"/>
+                <label for = "asian"> Asian, Native Hawaiian, or Other Pacific Islander</label>
+                <input id = "black" 
+                name = "black" 
+                type = "checkbox" 
+                value = "4"/>
+                <label for = "black"> Black or African American</label>
+                <input id = "kree" 
+                name = "kree" 
+                type = "checkbox" 
+                value = "5" />
+                <label for = "kree"> Kree or Inhuman</label>
+                <input id = "hispanic" 
+                name = "hispanic" 
+                type = "checkbox" 
+                value = "6" />
+                <label for = "hispanic"> Hispanic, Latino, or Spanish Origin</label>
+                <input id = "skrull" 
+                name = "skrull" 
+                type = "checkbox"
+                value = "7" />
+                <label for = "skrull"> Skrull, Shi'ar, or Other Cosmic Origin</label>
+                <input id = "middle-eastern" 
+                name = "middle-eastern" 
+                type = "checkbox" 
+                value = "8" />
+                <label for = "middle-eastern"> Middle Eastern or North African</label>
+                <input id = "white" 
+                name = "white" 
+                type = "checkbox" 
+                value = "9" />
+                <label for = "white"> White</label>
+                <input id = "other-demographic"
+                name = "other-demographic"
+                type = "checkbox"
+                value = "10"/>
+                <label for = "other-demographic"> Other, or prefer not to disclose</label>
+            </fieldset>
+            <fieldset>
+                <legend>What is your political affiliation?</legend>
+                <select id = "dropdown" 
+                name = "dropdown">
+                    <option value = "">(select one)</option>
+                    <option value = "1">Democrat</option>
+                    <option value = "2">Republican</option>
+                    <option value = "3">Independent</option>
+                    <option value = "4">Green</option>
+                    <option value = "5">All-Night Party</option>
+                    <option value = "6">Brotherhood of Mutants</option>
+                    <option value = "7">Other, or prefer not to disclose</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Which mayoral candidate are you most likely to vote for?</legend>
+                <input id = "steve-rogers"
+                name = "candidate"
+                type = "radio"/>
+                <label for = "steve-rogers"> Steve Rogers</label>
+                <input id = "tony-stark"
+                name = "candidate"
+                type = "radio"/>
+                <label for = "tony-stark"> Tony Stark</label>
+                <input id = "other-candidate"
+                name = "candidate"
+                type = "radio"
+                checked />
+                <label for = "other-candidate"> Other, or prefer not to disclose</label>
+            </fieldset>
+            <fieldset>
+                <legend>What policy or legislative issues are you most concerned about?</legend>
+                <textarea id = "issues"
+                name = "issues"
+                rows = "3"
+                cols = "30" 
+                placeholder = "e.g. immigration, mutant rights, metahuman oversight"></textarea>
+            </fieldset>
+            <input type = "submit" value = "submit"/>
+        </form>
     </body>
 </html>
-<!--
 
-    You should have a page title in an h1 element with an id of title
-    You should have a short explanation in a p element with an id of description
-    You should have a form element with an id of survey-form
-    Inside the form element, you are required to enter your name in an input field 
-    that has an id of name and a type of text
-    Inside the form element, you are required to enter your email in an input field 
-    that has an id of email
-    If you enter an email tha is not formatted correctly, you will see an HTML5 
-    validation error
-    Inside the form, you can enter a number in an input field that has an id of 
-    number
-    The number input should not accept non-numbers, either by preventing you from 
-    typing them or by showing an HTML5 validation error (depending on your browser).
-    If you enter numbers outside the range of the number input, which are defined by 
-    the min and max attributes, you will see an HTML5 validation error
-    For the name, email, and number input fields, you can see corresponding label 
-    elements in the form, that describe the purpose of each field with the following 
-    ids: id="name-label", id="email-label", and id="number-label"
-    For the name, email, and number input fields, you can see placeholder text that 
-    gives a description or instructions for each field
-    Inside the form element, you should have a select dropdown element with an id of 
-    dropdown and at least two options to choose from
-    Inside the form element, you can select an option from a group of at least two 
-    radio buttons that are grouped using the name attribute
-    Inside the form element, you can select several fields from a series of 
-    checkboxes, each of which must have a value attribute
-    Inside the form element, you are presented with a textarea for additional 
-    comments
-    Inside the form element, you are presented with a button with id of submit to 
-    submit all the inputs
-
-Fulfill the user stories and pass all the tests below to complete this project. Give 
-it your own personal style. Happy Coding!
-
-Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link 
-your stylesheet and apply your CSS
--->
-
+<!--TODO: Finalize CSS styling-->
 <!--Developed as an exercise for Responsive Web Design with freeCodeCamp.org-->
