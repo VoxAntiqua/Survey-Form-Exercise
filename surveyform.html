@@ -12,7 +12,7 @@
             <fieldset id = "personal">
                 <legend>Please enter your personal information</legend>
                 <label for = "name" id = "name-label">
-                    Full Name: <input 
+                    Full Name: <input class = "inline"
                     id = "name" 
                     name = "email" 
                     type = "text" 
@@ -20,7 +20,7 @@
                     required />
                 </label>
                 <label for = "email" id = "email-label">
-                    Email: <input 
+                    Email: <input class = "inline"
                     id = "email" 
                     name = "email" 
                     type = "email" 
@@ -28,7 +28,7 @@
                     required />
                 </label>
                 <label for = "number" id = "number-label">
-                    Age (Years): <input 
+                    Age (Years): <input class = "inline"
                     id = "number" 
                     name = "number" 
                     type = "number" 
@@ -40,52 +40,62 @@
             </fieldset>
             <fieldset id = "demographics">
                 <legend>What is your race, ethnicity, or origin? (Please check all that apply)</legend>
-                <input id = "american-indian-alaska-native" 
+                <input class = "inline"
+                id = "american-indian-alaska-native" 
                 name = "american-indian-alaska-native" 
                 type = "checkbox" 
                 value = "1"/>
                 <label for = "american-indian-alaska-native"> American Indian or Alaska Native</label>
-                <input id = "asgardian" 
+                <input class = "inline" 
+                id = "asgardian" 
                 name = "asgardian" 
                 type = "checkbox" 
                 value = "2"/>
                 <label for = "asgardian"> Asgardian or Other Nine Realms Origin</label>
-                <input id ="asian" 
+                <input class = "inline"
+                id ="asian" 
                 name = "asian" 
                 type = "checkbox" 
                 value = "3"/>
                 <label for = "asian"> Asian, Native Hawaiian, or Other Pacific Islander</label>
-                <input id = "black" 
+                <input class = "inline" 
+                id = "black" 
                 name = "black" 
                 type = "checkbox" 
                 value = "4"/>
                 <label for = "black"> Black or African American</label>
-                <input id = "kree" 
+                <input class = "inline"
+                id = "kree" 
                 name = "kree" 
                 type = "checkbox" 
                 value = "5" />
                 <label for = "kree"> Kree or Inhuman</label>
-                <input id = "hispanic" 
+                <input class = "inline" 
+                id = "hispanic" 
                 name = "hispanic" 
                 type = "checkbox" 
                 value = "6" />
                 <label for = "hispanic"> Hispanic, Latino, or Spanish Origin</label>
-                <input id = "skrull" 
+                <input class = "inline"
+                id = "skrull" 
                 name = "skrull" 
                 type = "checkbox"
                 value = "7" />
                 <label for = "skrull"> Skrull, Shi'ar, or Other Cosmic Origin</label>
-                <input id = "middle-eastern" 
+                <input class = "inline"
+                id = "middle-eastern" 
                 name = "middle-eastern" 
                 type = "checkbox" 
                 value = "8" />
                 <label for = "middle-eastern"> Middle Eastern or North African</label>
-                <input id = "white" 
+                <input class = "inline"
+                id = "white" 
                 name = "white" 
                 type = "checkbox" 
                 value = "9" />
                 <label for = "white"> White</label>
-                <input id = "other-demographic"
+                <input class = "inline"
+                id = "other-demographic"
                 name = "other-demographic"
                 type = "checkbox"
                 value = "10"/>
@@ -134,5 +144,9 @@
     </body>
 </html>
 
+<!--TODO: All your radio buttons should have a value attribute and value.-->
+<!--TODO: You should have an input or button element with an id of submit.-->
+<!--TODO: Your #submit should have a type of submit.-->
+<!--TODO: Your #submit should be a descendant of #survey-form.-->
 <!--TODO: Finalize CSS styling-->
 <!--Developed as an exercise for Responsive Web Design with freeCodeCamp.org-->

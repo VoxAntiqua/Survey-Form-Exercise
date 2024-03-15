@@ -13,6 +13,26 @@ h1, p {
     text-align: center;
 }
 
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    margin: 2rem 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="checkbox"] {
+    display: inline;
+}
+
 input, textarea {
     background-color: #0a230a;
     border: 1px solid #0a230a;
