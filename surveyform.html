@@ -12,7 +12,7 @@
             <fieldset id = "personal">
                 <legend>Please enter your personal information</legend>
                 <label for = "name" id = "name-label">
-                    Full Name: <input class = "inline"
+                    Full Name: <input 
                     id = "name" 
                     name = "email" 
                     type = "text" 
@@ -20,7 +20,7 @@
                     required />
                 </label>
                 <label for = "email" id = "email-label">
-                    Email: <input class = "inline"
+                    Email: <input 
                     id = "email" 
                     name = "email" 
                     type = "email" 
@@ -28,7 +28,7 @@
                     required />
                 </label>
                 <label for = "number" id = "number-label">
-                    Age (Years): <input class = "inline"
+                    Age (Years): <input 
                     id = "number" 
                     name = "number" 
                     type = "number" 
@@ -40,66 +40,76 @@
             </fieldset>
             <fieldset id = "demographics">
                 <legend>What is your race, ethnicity, or origin? (Please check all that apply)</legend>
+                <label for = "american-indian-alaska-native">
                 <input class = "inline"
                 id = "american-indian-alaska-native" 
                 name = "american-indian-alaska-native" 
                 type = "checkbox" 
                 value = "1"/>
-                <label for = "american-indian-alaska-native"> American Indian or Alaska Native</label>
+                 American Indian or Alaska Native</label>
+                <label for = "asgardian">
                 <input class = "inline" 
                 id = "asgardian" 
                 name = "asgardian" 
                 type = "checkbox" 
                 value = "2"/>
-                <label for = "asgardian"> Asgardian or Other Nine Realms Origin</label>
+                 Asgardian or Other Nine Realms Origin</label>
+                <label for = "asian">
                 <input class = "inline"
                 id ="asian" 
                 name = "asian" 
                 type = "checkbox" 
                 value = "3"/>
-                <label for = "asian"> Asian, Native Hawaiian, or Other Pacific Islander</label>
+                 Asian, Native Hawaiian, or Other Pacific Islander</label>
+                <label for = "black">
                 <input class = "inline" 
                 id = "black" 
                 name = "black" 
                 type = "checkbox" 
                 value = "4"/>
-                <label for = "black"> Black or African American</label>
+                 Black or African American</label>
+                <label for = "kree">
                 <input class = "inline"
                 id = "kree" 
                 name = "kree" 
                 type = "checkbox" 
                 value = "5" />
-                <label for = "kree"> Kree or Inhuman</label>
+                 Kree or Inhuman</label>
+                <label for = "hispanic">
                 <input class = "inline" 
                 id = "hispanic" 
                 name = "hispanic" 
                 type = "checkbox" 
                 value = "6" />
-                <label for = "hispanic"> Hispanic, Latino, or Spanish Origin</label>
+                 Hispanic, Latino, or Spanish Origin</label>
+                <label for = "skrull">  
                 <input class = "inline"
                 id = "skrull" 
                 name = "skrull" 
                 type = "checkbox"
                 value = "7" />
-                <label for = "skrull"> Skrull, Shi'ar, or Other Cosmic Origin</label>
+                 Skrull, Shi'ar, or Other Cosmic Origin</label>
+                <label for = "middle-eastern">
                 <input class = "inline"
                 id = "middle-eastern" 
                 name = "middle-eastern" 
                 type = "checkbox" 
                 value = "8" />
-                <label for = "middle-eastern"> Middle Eastern or North African</label>
+                 Middle Eastern or North African</label>
+                <label for = "white">
                 <input class = "inline"
                 id = "white" 
                 name = "white" 
                 type = "checkbox" 
                 value = "9" />
-                <label for = "white"> White</label>
+                 White</label>
+                <label for = "other-demographic">
                 <input class = "inline"
                 id = "other-demographic"
                 name = "other-demographic"
                 type = "checkbox"
                 value = "10"/>
-                <label for = "other-demographic"> Other, or prefer not to disclose</label>
+                 Other, or prefer not to disclose</label>
             </fieldset>
             <fieldset>
                 <legend>What is your political affiliation?</legend>
@@ -117,19 +127,27 @@
             </fieldset>
             <fieldset>
                 <legend>Which mayoral candidate are you most likely to vote for?</legend>
-                <input id = "steve-rogers"
-                name = "candidate"
-                type = "radio"/>
-                <label for = "steve-rogers"> Steve Rogers</label>
-                <input id = "tony-stark"
-                name = "candidate"
-                type = "radio"/>
-                <label for = "tony-stark"> Tony Stark</label>
-                <input id = "other-candidate"
+                <label for = "steve-rogers"><input id = "steve-rogers"
+                class = "inline"
                 name = "candidate"
                 type = "radio"
+                value = "1"/>
+                 Steve Rogers</label>
+                <label for = "tony-stark">
+                <input id = "tony-stark"
+                class = "inline"
+                name = "candidate"
+                type = "radio"
+                value = "2"/>
+                 Tony Stark</label>
+                <label for = "other-candidate">
+                <input id = "other-candidate"
+                class = "inline"
+                name = "candidate"
+                type = "radio"
+                value = "3"
                 checked />
-                <label for = "other-candidate"> Other, or prefer not to disclose</label>
+                 Other, or prefer not to disclose</label>
             </fieldset>
             <fieldset>
                 <legend>What policy or legislative issues are you most concerned about?</legend>
@@ -139,14 +157,9 @@
                 cols = "30" 
                 placeholder = "e.g. immigration, mutant rights, metahuman oversight"></textarea>
             </fieldset>
-            <input type = "submit" value = "submit"/>
+            <input class = "submit" id = "submit" type = "submit" value = "Excelsior"/>
         </form>
     </body>
 </html>
 
-<!--TODO: All your radio buttons should have a value attribute and value.-->
-<!--TODO: You should have an input or button element with an id of submit.-->
-<!--TODO: Your #submit should have a type of submit.-->
-<!--TODO: Your #submit should be a descendant of #survey-form.-->
-<!--TODO: Finalize CSS styling-->
 <!--Developed as an exercise for Responsive Web Design with freeCodeCamp.org-->
